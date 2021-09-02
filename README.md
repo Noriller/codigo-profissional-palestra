@@ -60,8 +60,68 @@ GIT é padrão da indústria e será muito difícil fugir dele. Vale a pena apre
 
 ### Testes
 
-#### porque fazer
-#### soft vs hard (software)
+*Soft*ware, macio, maleável. Diferente de *hard*ware (e também de *firm*ware), que são duros, firmes.
+
+Software deveria ser fácil de mexer, modificar. Poder alterar deveria ser tão simples quanto fazer pela primeira vez.
+
+#### Porque testar
+
+Testes normalmente são quebrados em testes exploratórios, testes ponta-a-ponta, testes de integração e testes unitários.
+De certa forma também é possível incluir a "análise estática", em outras palavras: Tipagem Estática.
+
+Alguns, como o Uncle Bob talvez favoreçam mais os testes unitário, outros como o [Kent C. Dodds](https://sergioamjr.medium.com/escreva-testes-n%C3%A3o-muitos-mas-mais-de-integra%C3%A7%C3%A3o-7ebebf225516) favorecem mais os de integração. Independente disso, todos dizem a mesma coisa: **TESTE**!
+
+#### Tipos de Testes
+
+Embora você mexer em alguma coisa e ir ver lá se funcionou ou não é um teste, não é algo confiável.
+
+E se o que você alterou acabou quebrando algo em um lugar que você não abriu depois?
+
+"Testes manuais" demoram tempo, não são possiveis de serem replicados e cobrem muito pouco.
+
+##### Tipagem Estática
+
+Linguagens que oferecem a tipagem estática possuem uma camada adicional de segurança, pois antes mesmo de rodar o código já é possivel pegar erros como que não existe uma propriedade ou método em um objeto ou que o retorno é de um tipo diferente do esperado.
+
+##### Testes Unitários
+
+São os testes que cobrem apenas a menor fração possível do código, seja uma função, método ou classe.
+
+São também os mais rápidos de rodar e mais baratos de realizar.
+
+##### Testes de Integração
+
+Testes de integração cobrem a ligação entre as menores frações. Duas funções podem funcionar perfeitamente sozinhas, mas pode haver uma quebra quando uma chama a outra.
+
+O exemplo mais comum é o do guarda chuva, o botão funciona, a tela se abre, a haste se estica... mas na hora que tentamos abrir o guarda chuva "em produção" tudo funciona como deveria... exceto que você fica só com a guarda e haste na mão enquanto a tela sai voando (mas a tela está aberta como deveria).
+
+Neste ponto é bom ver a visão que está na [Testing Library](https://testing-library.com/):
+
+> Quanto mais seus testes se assemelharem à maneira como o software é usado, mais confiança eles podem lhe dar.
+>
+> &mdash; *Kent C. Dodds*
+
+##### Testes Ponta-A-Ponta
+
+São os testes que cobrem de ponta a ponta.
+
+Eles não precisam cobrir todos os caminhos possíveis, especialmente se há uma cobertura disso dos outros testes. Eles normalmente correm nos caminhos mais importantes testando o fluxo da aplicação como um todo.
+
+São os mais caros, lentos e mais voláteis, mas são parte importante da suíte de testes.
+
+##### Testes Exploratórios
+
+Estes normalmente são feitos de forma a testar os limites da aplicação.
+
+Entre outros: testes de penetração, testes de mutação, testes de carga, etc.
+
+#### TDD
+
+É uma disciplina onde você escreve os testes **ANTES** de escrever o código.
+
+Dessa forma o teste já nasce testado e, normalmente, acaba gerando um código mais desacoplado, melhorando a qualidade do próprio código.
+
+Para saber mais veja [aqui](wiki/As_Tres_Leis_do_TDD.md)
 
 ### Tive problemas, e agora?
 
