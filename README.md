@@ -136,6 +136,7 @@ Para saber mais veja [aqui](wiki/As_Tres_Leis_do_TDD.md)
 #### Overenginering
 #### Não abstrair de mais
 #### Numeros Magicos
+#### Refatorar
 
 #### "Siglas"
 
