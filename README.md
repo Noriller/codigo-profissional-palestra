@@ -185,6 +185,20 @@ Use o guia do StackOverflow, faça sua boa pergunta de cara e espere alguém te 
 
 ### Clean Code
 
+Aqui é onde acontecem os "maiores pecados". 
+
+Programadores não fazem código para máquinas, mas primeiramente para pessoas.
+
+Vou repetir:
+
+#### **PROGRAMADORES NÃO FAZEM CÓDIGO PARA MÁQUINAS, MAS PRIMEIRAMENTE PARA PESSOAS.**
+
+Fazer o código funcionar é a parte mais fácil.
+
+Mais do que isso, é preciso salientar que nós, programadores, passamos mais tempo LENDO código do que ESCREVENDO. (E por uma margem MUITO grande.)
+
+Por isso, se o cógido não for legível ou se não for possível entender o que está acontecendo... pode funcionar, mas é inútil se eu não conseguir entender e mudar quando for preciso.
+
 #### Nomes descritivos
 #### Regra do escoteiro
 #### Overenginering
