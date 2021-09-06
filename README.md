@@ -125,9 +125,63 @@ Para saber mais veja [aqui](wiki/As_Tres_Leis_do_TDD.md)
 
 ### Tive problemas, e agora?
 
+Pegue os melhores Youtubers/Streamers/Professores de programação. 
+
+Não importa o que eles mostram durante seus vídeos, eles também erram. E erram muito.
+
+Você também vai errar e ter problemas. E isso é OK.
+
 #### Leia os erros
+
+Antes de se desesperar, leia a mensagem de erro.
+
+Ela vai te dar informações úteis para você entender qual foi o problema e as vezes até o que falta ou o que você precisa fazer.
+
+Ainda não funcionou? Copie e pesquise o erro, com certeza alguém já teve o mesmo problema.
+
 #### Leia a documentação
-#### Stackoverflow guidelines
+
+> Horas de debugging te salvam minutos de ler documentação.
+
+Leia a documentação. Não estou dizendo pra ler de cabo a rabo só por ler, mas se está usando uma [API](#api) (ou no mínimo se usa bastante) é interessante saber como ela funciona até para conseguir tirar mais dela ou usar ela de maneira melhor.
+
+##### API
+
+Quando falamos API, muitas vezes já pensamos em uma API pública tipo a [PokéAPI](https://pokeapi.co/), mas API é um termo muito mais amplo.
+
+Aqui estou me referindo de API no sentido de interface mesmo. Quando chamamos o método de uma linguagem ou de um package, aquilo também é uma API.
+
+#### StackOverflow - Como fazer uma boa pergunta?
+
+[Acho importante mostrar a versão inglesa das guidelines do StackOverflow, porque são bem completas.](https://stackoverflow.com/help/how-to-ask)
+
+Mas segue um resumo:
+
+* Procure e faça sua pesquisa
+* Escreva um título que resuma seu problema
+  * Faça de conta que está falando com um colega ocupado
+  * Gramática e pontuação são importantes
+* Introduza o problema antes de qualquer código
+  * Coloque código o suficiente para que outros possam reproduzir o problema
+  * Se possível, crie em um playground algo que reproduza seu problema. 
+  * Não poste imagens de código, data e erros. Copie o texto.
+* Inclua todas as tags relevantes
+* Leia o que escreveu: faz sentido? consegue reproduzir?
+* Poste a questão e responda ao feedback
+
+Adicionalmente quero colocar, porque é algo que vejo muito:
+
+**Não chegue perguntando "quem pode me ajudar com XXXX?", já deixe sua pergunta!**
+
+Muita gente em muitos fóruns e similares já vem perguntando quem pode ajudar com uma tecnologia, mas esperam alguém responder "sim", "qual o problema" para finalmente falar o problema.
+
+Não faça isso! Se a pessoa depois não sabe como resolver, fica ruim pra todo mundo. 
+
+Por outro lado, outra pessoa pode não ter confiança de ajudar algo que não sabe, mas já passou pelo problema e sabe como resolver.
+
+E ainda: é uma baita perda de tempo!
+
+Use o guia do StackOverflow, faça sua boa pergunta de cara e espere alguém te ajudar.
 
 ### Clean Code
 
