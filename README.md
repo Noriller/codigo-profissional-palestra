@@ -199,19 +199,118 @@ Mais do que isso, é preciso salientar que nós, programadores, passamos mais te
 
 Por isso, se o cógido não for legível ou se não for possível entender o que está acontecendo... pode funcionar, mas é inútil se eu não conseguir entender e mudar quando for preciso.
 
+
+#### Regra do Escoteiro
+
+> Toda vez que mexer em um código, deixe ele um pouco mais limpo do que quando encontrou.
+
 #### Nomes descritivos
-#### Regra do escoteiro
-#### Overenginering
+
+Faz tempo que as linguagens limitavam o nome das variáveis e funções. 
+
+Hoje, mesmo as que limitam são generosas o suficiente para não ter como desculpa nomes como: `nm_ac (nome_alguma_coisa)`.
+
+Os editores de código ajudam a completar, então mesmo se algo tenha o nome: `nomeSuperDescritivoMasSuperLongo`, mesmo colocando `superde` eles já encontram o nome certo e completo.
+
+Outro ponto... não MENTIR! Se uma função se chamar `pegarNumeros` e a função em si pega e transforma... isso é uma mentira. Alguém pode querer os dados "crus" e vai ter problema porque ela faz alguma coisa inesperada.
+
+#### Sobre o tamanho de funções, classes, métodos
+
+Existe apenas duas regras:
+
+1. Funções devem ser pequenas.
+2. E ainda menores do que está pensando.
+
+#### Sobre overenginering e não abstrair de mais
+
+Não tente fazer algo genérico de cara, você vai quebrar a cara e vai acabar não usando a abstração em nenhum outro lugar.
+
+Primeiro você faz funcionar para um caso, daí quando precisar você abstrai para usar em outros.
+
+Mas CUIDADO! Um monte de `ifs` não fazem uma boa abstração.
+
+> Prefira duplicação a uma abstração errada
+>
+> &mdash; Sandi Metz
+
 #### Não abstrair de mais
-#### Numeros Magicos
+
+Por mais legal que seja aplicar operadores booleanos em problemas comuns... se só você entende o código...
+
+Há coisas que são básicas, um patamar mínimo que todos deveriam ter para poder funcionar como equipe.
+
+Por causa disso, as vezes é necessário deixar aqueles `bitwise operators` de lado e colocar algo que todo mundo entenda.
+
+#### Números Mágicos
+
+Aqui é explicito o que é o `2`.
+```js
+  function multiplicarPorDois(num){
+    return num * 2;
+  }
+```
+
+Já aqui...
+```js
+  function f(x){
+    return (x === 10) ? true : false;
+  }
+```
+O que é `10`? (porque `f`?)
+
+```js
+  function verificaConfiguracaoX(configCheck){
+    const configX = 10;
+    return (configCheck === configX) ? true : false;
+  }
+```
+Ah... `10` é uma configuração.
+
 #### Refatorar
+
+Maioria dos cursos mostra um mundo onde você "logicamente" vai do passo `A` para o `B` e depois para o `C`.
+
+No mundo real entretanto... você vai do `A` para o `G`, depois `L` e finalmente `C`.
+
+Depois refatoramos para que `A -> B -> C`.
 
 #### "Siglas"
 
-##### DRY
-##### KISS
+##### DRY - Don't Repeat Yourself
+
+Código duplicado significa que um bug em um lugar precisa ser arrumado em vários lugares. Mas e se esquecemos de alterar?
+
+Código duplicado também significa que foi feito a mesma coisa várias vezes.
+
+Por isso: **Não se Repita!**
+
+##### KISS - Keep It Simple, Stupid
+
+Uma das vantagens to TDD é escrevermos apenas o necessário para resolver o problema (fazer o teste passar).
+
+Isso leva a um código mais "direto ao ponto".
+
+Com ou sem TDD, esse é o objetivo: **manter o código simples**.
+
+##### YAGNI - You Aren't Gonna Need It
+
+**Você não vai precisar disso.**
+
+"Ah... mas e se os usuários quiserem fazer" NÃO!
+
+**Você não vai precisar disso.**
+
 ##### SOLID
-##### YAGNI
+
+* S - Single-responsiblity Principle
+* O - Open-closed Principle
+* L - Liskov Substitution Principle
+* I - Interface Segregation Principle
+* D - Dependency Inversion Principle
+
+Isso sozinho é um assunto bem amplo, mas se desse pra resumir em algo seria: mantenha o código desacoplado.
+
+Pense em LEGO, cada peça em si não depende de outra, mas elas possuem conexões que deixam você criar coisas. E conectando elas você vai criando coisas maiores e mais complexas.
 
 ## Senti falta de alguma coisa ou acho que existem erros
 
