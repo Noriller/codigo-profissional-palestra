@@ -24,6 +24,11 @@ Na minha experiência, para começar você precisa de 3 coisas:
 3. RAIVA!
     * É necessário superar a inércia, estudar, enfrententar os erros pra finalmente conseguir resolver o problema. Para isso é necessário RAIVA!
 
+### Preciso saber inglês?
+
+Em um primeiro momento, não. Mas inevitavelmente, sim. 
+
+Chega uma hora que o que existe traduzido acaba... e a "lingua franca" da computação é o inglês.
 
 ## Não leve tudo o que vou colocar abaixo como verdades
 
