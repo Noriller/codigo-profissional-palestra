@@ -13,6 +13,18 @@
   Muitas pessoas não querem se tornar programadoras, e isso não é um problema!
   Mas assim como você olha chefs no youtube para aprender receitas novas e maneiras melhores de cozinhar, aprender com programadores profissionais vai te ensinar muita coisa e deixar, seja lá o que for fazer, muito melhor.
 
+## Como eu começo a programar?
+
+Na minha experiência, para começar você precisa de 3 coisas:
+
+1. Um problema para resolver.
+  * Tendo um problema, você quebra ele em pedaços menores e consegue um foco maior pra resolver cada um
+2. Preguiça.
+  * Por preguiça eu quero dizer uma vontade de não ficar perdendo tempo com algo que pode ser automatizado, ou feito de uma maneira melhor.
+3. RAIVA!
+  * É necessário superar a inércia, estudar, enfrententar os erros pra finalmente conseguir resolver o problema. Para isso é necessário RAIVA!
+
+
 ## Não leve tudo o que vou colocar abaixo como verdades
 
 > **Primeiro é preciso conhecer as regras para depois quebrá-las.**
